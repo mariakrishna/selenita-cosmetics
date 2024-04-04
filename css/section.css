@@ -1,0 +1,16 @@
+.section-bg {
+  background: var(--color-bg);
+}
+
+.section {
+  display: flex;
+  padding: 60px 0;
+  gap: 52px;
+  justify-content: center;
+  align-items: center;
+}
+
+.roots-banner img {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,58 @@
+.info-bg {
+  background-color: var(--color-info-bg);
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 50px 0;
+  gap: 20px;
+}
+
+.info-item {
+  margin: 0 60px;
+}
+
+.info-title {
+  color: var(--color-info-det);
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.6px;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.info-text {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.parcele::before {
+  background: url("../img/info/parcele.svg");
+}
+
+.satisfacao::before {
+  background: url("../img/info/satisfacao.svg");
+}
+
+.frete::before {
+  background: url("../img/info/frete.svg");
+}
+
+.magick::before {
+  background: url("../img/info/magick_club.svg");
+}
+
+.magick::before,
+.satisfacao::before,
+.parcele::before,
+.frete::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  top: 0px;
+  left: -50px;
+}

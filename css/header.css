@@ -1,0 +1,147 @@
+.superinfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 18px;
+  background-color: var(--color-alert-pri);
+  line-height: 1.5;
+}
+
+.superinfo p strong {
+  font-weight: 700;
+}
+
+.containeru {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+header,
+main {
+  background-color: var(--color-bg);
+}
+
+header {
+  padding: 10px;
+  font-family: var(--font-display);
+  color: var(--color-main);
+}
+
+.header,
+label {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 32px;
+}
+
+.logo {
+  padding: 22px;
+  font-size: 36px;
+  line-height: 1;
+  width: 160px;
+  text-align: center;
+}
+
+.menu-nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 32px;
+  flex-wrap: wrap;
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+.menu-member {
+  display: flex;
+  gap: 32px;
+  padding: 22px;
+}
+
+.menu-nav__button {
+  display: none;
+}
+
+.menu-nav__button:checked ~ .menu {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.burger-menu {
+  display: none;
+  background: url("../img/main/burger-menu.svg") no-repeat;
+  background-size: contain;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 840px) {
+  .menu-nav {
+    row-gap: 0px;
+    column-gap: 32px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .superinfo {
+    text-align: center;
+  }
+
+  .logo {
+    order: 2;
+  }
+
+  .menu {
+    order: 1;
+  }
+
+  .header {
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu-member {
+    order: 3;
+  }
+
+  .menu-nav__button {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .menu-nav {
+    background-color: var(--color-bg);
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+    transform: translateY(-100%);
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-nav.show {
+    display: flex;
+    gap: 0;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    transform: translateY(88%);
+    visibility: visible;
+  }
+}

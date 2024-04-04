@@ -1,0 +1,26 @@
+:root {
+  /*fonts*/
+  --font-display: "Bagina", sans-serif;
+  --font-main: "Lato", sans-serif;
+  /*colors*/
+  --color-bg: #ffdbf5;
+  --color-gray: #b39cad;
+  --color-info-bg: #fface8;
+  --color-info-det: #d033a4;
+  --color-main: #58364f;
+  --color-alert-pri: #bdfbae;
+  --color-alert-sha: #9cf087;
+  --color-alert-sec: #5bad48;
+}
+
+.colormain {
+  color: var(--color-main);
+}
+
+.colorbg {
+  color: var(--color-bg);
+}
+
+.colorgray {
+  color: var(--color-gray);
+}
