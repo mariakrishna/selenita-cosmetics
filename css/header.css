@@ -29,7 +29,7 @@ header {
 }
 
 .header,
-label {
+.menu {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -55,6 +55,7 @@ label {
 
 .menu-member {
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
   padding: 22px;
 }

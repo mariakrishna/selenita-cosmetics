@@ -1,3 +1,57 @@
 footer {
-  display: none;
+  background-color: var(--color-bg);
+  padding: 40px 0;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "help       departments  brands   footer-info"
+    "help       my-account   brands   footer-info";
+  color: var(--color-main);
+  line-height: 1.5;
+}
+
+.footer h2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.footer a,
+.footer p {
+  font-size: 14px;
+}
+
+.help,
+.departments,
+.my-account,
+.brands {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.help {
+  grid-area: help;
+}
+.departments {
+  grid-area: departments;
+}
+.brands {
+  grid-area: brands;
+}
+.my-account {
+  grid-area: my-account;
+}
+.footer-info {
+  grid-area: footer-info;
+}
+
+.footer-info {
+  display: grid;
+}
+
+.credits {
+  text-align: center;
 }

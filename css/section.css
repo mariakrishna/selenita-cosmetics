@@ -4,6 +4,7 @@
 
 .section {
   display: flex;
+  flex-wrap: wrap;
   padding: 60px 0;
   gap: 52px;
   justify-content: center;
@@ -13,4 +14,35 @@
 .roots-banner img {
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 44px 0;
+    gap: 40px;
+  }
+
+  .section img {
+    width: 147px;
+  }
+}
+
+.roots-banner-img-sm {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .roots-banner-img-lg {
+    display: none;
+  }
+  .roots-banner-img-sm {
+    display: block;
+  }
+}
+
+@media (max-width: 320px) {
+  .section {
+    padding: 44px 5px;
+    gap: 10px;
+  }
 }

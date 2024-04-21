@@ -56,3 +56,17 @@
   top: 0px;
   left: -50px;
 }
+
+@media (max-width: 1024px) {
+  .info {
+    grid-template-columns: 1fr 1fr;
+    padding: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .info {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+}
