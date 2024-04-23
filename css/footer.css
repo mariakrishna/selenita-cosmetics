@@ -199,8 +199,12 @@ footer {
       "payment";
   }
 
+  .newsletter {
+    display: grid;
+  }
+
   .newsletter input {
-    min-width: 80%;
+    min-width: 90%;
     margin-bottom: 5px;
   }
 
