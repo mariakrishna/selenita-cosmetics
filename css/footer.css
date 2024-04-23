@@ -198,21 +198,12 @@ footer {
       "payment";
   }
 
-  .footer-info input {
-    min-width: 50%;
-  }
-}
-
-@media (max-width: 380px) {
-  .newsletter {
-    display: grid;
+  .newsletter input {
+    min-width: 80%;
+    margin-bottom: 5px;
   }
 
   .newsletter button {
     justify-self: center;
-  }
-  .newsletter input {
-    min-width: 80%;
-    margin-bottom: 5px;
   }
 }
