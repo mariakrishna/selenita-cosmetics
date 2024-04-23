@@ -23,6 +23,7 @@ footer {
 .footer a,
 .footer p {
   font-size: 14px;
+  color: var(--color-main);
 }
 
 .help,
