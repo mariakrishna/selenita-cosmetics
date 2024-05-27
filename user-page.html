@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Conta</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="header containeru">
+      <div class="logo">
+        <img src="./img/main/sc-logo.svg">
+        <h1>Selenita Cosmetics</h1>
+      </div>
+      <input type="checkbox" id="menu" class="menu-nav__button">
+      <label for="menu" class="menu">
+        <span class="burger-menu"></span>
+        <ul class="menu-nav">
+          <li><a href="">Toda a Loja</a></li>
+          <li><a href="">Marcas</a></li>
+          <li><a href="">Cabelos</a></li>
+          <li><a href="">SkinCare</a></li>
+          <li><a href="">Maquiagem</a></li>
+          <li><a href="">Cuidados corporais</a></li>
+        </ul>
+      </label>
+      <div class="menu-member">
+        <a href="javascript:void(0)"><img id="login-btn" src="./img/main/user.svg"></a>
+        <a href="./fav-page.html"><img id="fav-btn" src="./img/main/fav.svg"></a>
+      </div>
+    </div>
+  </header>
+  <main class="user-account">
+    <h2 class="user-salute">
+      Bem Vinda, Selena!
+    </h2>
+    <section class="user-personal-data">
+      <h3 class="user-data-title">Dados Pessoais</h3>
+      <img src="./img/user-page/user.png" alt="Profile Picture" />
+      <ul class="user-data-list">
+        <li class="user-name">Selena Katsaros Demétrio </li>
+        <li class="user-email">Email: asa@asa.com</li>
+        <li class="user-birthday">Aniversário: 06/09/1986</li>
+      </ul>
+      <ul class="user-data-list">
+        <li class="user-cpf">CPF: 234.***.***-**</li>
+        <li class="user-tel">Telefone: (21) 99875-4418</li>
+      </ul>
+      <a class="change-data" href="#">Alterar Dados</a>
+      <script src="./js/modalChangeData.js" defer type="module"></script>
+    </section>
+    <section class="user-address">
+      <h3>Endereços</h3>
+      <ul class="main-address">
+        <li class="main-adress-title">Home, sweet home</h3>
+        </li>
+        <li>Selena Katsaros Demétrio </li>
+        <li>Rua dos Bobos, nº 0, casa - Cafundó de Judas | Quinto dos Infernos/QI</li>
+      </ul>
+
+      <ul class="add-new-adress">
+        <li><a href="#"><img src="./img/user-page/add_10336805 1.svg">
+            <p>Adicionar novo Endereço</p>
+          </a>
+      </ul>
+      </li>
+      <span>Endereço Principal</span>
+    </section>
+    <section class="user-credit-card">
+      <h3>Cartões</h3>
+      <ul class="main-credit-card">
+        <li class="main-adress-title">Mastercard **** **** 1288</h3>
+        </li>
+        <li>Selena Katsaros Demétrio </li>
+        <li>Expira em 11/28</li>
+      </ul>
+      <ul class="add-new-card">
+        <li><a href="#"><img src="./img/user-page/add_10336805 1.svg">
+            <p>Adicionar novo Cartão</p>
+          </a>
+        </li>
+      </ul>
+      <span>Seu cartão favorito</span>
+    </section>
+    <div class="accoun-btn">
+      <p><a href="#">Sair</a></p>
+      <p><a href="#">Deletar conta</a></p>
+    </div>
+  </main>
+  <footer>
+    <div class="footer containeru">
+      <div class="help">
+        <h2>Ajuda & Suporte</h2>
+        <a href="#">Relacionamento com o Cliente</a>
+        <a href="#">Entregas</a>
+        <a href="#">Política de Devolução</a>
+        <a href="#">Pagamentos</a>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Proteja-se Contra Fraudes</a>
+        <a href="#">Preferências de Cookies</a>
+        <a href="#">Consumidor.gov.br</a>
+        <a href="#">Código de defesa do consumidor</a>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Mapa do Site</a>
+        <a href="#">Nossas lojas</a>
+      </div>
+      <div class="departments">
+        <h2>Departamentos</h2>
+        <a href="#">Toda a Loja</a>
+        <a href="#">Cabelos</a>
+        <a href="#">Skincare</a>
+        <a href="#">Cuidados Corporais</a>
+        <a href="#">Maquiagem</a>
+        <a href="#">Perfumes</a>
+        <a href="#">Outlet</a>
+      </div>
+      <div class="my-account">
+        <h2>Minha Conta</h2>
+        <a href="#">Dados Pessoais</a>
+        <a href="#">Meus endereços</a>
+        <a href="#">Alterar senha</a>
+        <a href="#">Meus pedidos</a>
+      </div>
+      <div class="brands">
+        <h2>Marcas</h2>
+        <a href="#">Luar Eterno</a>
+        <a href="#">Sussurros da Floresta</a>
+        <a href="#">Oráculo de Ônix</a>
+        <a href="#">Véu de Vênus</a>
+        <a href="#">Elixir das Ninfas</a>
+        <a href="#">Segredos de Sereia</a>
+        <a href="#">Encanto de Gaia</a>
+        <a href="#">Aura de Avalon</a>
+        <a href="#">Feitiço de Fênix</a>
+        <a href="#">Visões de Vidente</a>
+      </div>
+      <div class="footer-info">
+        <label for="newsletter" class="newsletter">
+          <h2>Cadastre-se para receber novidades e promoções</h2>
+          <input type="email" name="newsletter" id="newsletter" placeholder="E-mail">
+          <button type="button">Cadastrar</button>
+          <p class="privacy">Ao se cadastrar, você concorda em receber comunicações nos termos da nossa <a
+              href="#">Política de Privacidade.</a></p>
+        </label>
+        <div class="social-media">
+          <h2>Redes Sociais</h2>
+          <div>
+            <a href="#"><img src="./img/footer/wpp.svg" alt="Whatsapp" /></a>
+            <a href="#"><img src="./img/footer/inst.svg" alt="Instagram" /></a>
+            <a href="#"><img src="./img/footer/facebook.svg" alt="Facebook" /></a>
+            <a href="#"><img src="./img/footer/tiktok.svg" alt="TikTok" /></a>
+            <a href="#"><img src="./img/footer/youtube.svg" alt="YouTube" /></a>
+          </div>
+        </div>
+        <div class="security">
+          <h2>Segurança</h2>
+          <div><img src="./img/footer/security.png"></div>
+        </div>
+        <div class="payment">
+          <h2>Pagamento</h2>
+          <img src="./img/footer/payment.png">
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="credits">
+      <h1>Credits</h1>
+      <p>Design&Code <a href="mailto:selenitadesign13@gmail.com">Maria Krishna</a></p>
+      <dl>
+        <dt>Icons</dt>
+        <dd><a href="https://br.freepik.com/autor/nursyifa/icones/generic-black-fill_10579#from_element=resource_detail"
+            target="_blank">Nur
+            syifa fauziah</a><br>
+          <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>
+        </dd>
+        <dt>Fonts</dt>
+        <dd><a href="https://holisfonts.com/" target="_blank">Bagina</a>
+          <br><a href="http://www.typoland.com/designers/Lukasz_Dziedzic/" target="_blank">Lato</a>
+        </dd>
+        <dt>Photos</dt>
+        <dd><a
+            href="https://unsplash.com/@annapostovaya?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            target="_blank">Hanna Postova on Unsplash</a><br>
+          <a href="https://unsplash.com/@annapostovaya?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            target="_blank">Hanna Postova</a><br>
+          <a
+            href="https://unsplash.com/@elsaolofsson?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Elsa
+            Olofsson</a>
+          <br><a
+            href="https://unsplash.com/@ediegosanchez?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">DIEGO
+            SÁNCHEZ</a><br>
+          <a href="https://unsplash.com/@kalosskin?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Kalos
+            Skincare</a><br>
+
+          <a href="https://unsplash.com/@stuchy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">George
+            Bohunicky</a><br>
+          <a
+            href="https://unsplash.com/@sindystrife?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Sindy
+            Strife</a><br>
+          <a href="https://unsplash.com/@kxvn_lx?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">kevin
+            laminto</a>
+          <br><a
+            href="https://unsplash.com/@pmvch?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">pmv
+            chamara</a>
+          <br>
+          <a
+            href="https://unsplash.com/@mockupfreenet?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mockup
+            Free</a>
+        </dd>
+      </dl>
+    </div>
+  </footer>
+  <div id="modal-change-data" class="modal-change-data">
+    <div class="modal-content-data">
+      <span class="close-change-data">&times;</span>
+      <h2>Alterar Dados</h2>
+      <form id="user-data-form">
+        <img src="./img/user-page/user.png" alt="Profile Picture" />
+        <div class="user-change-data">
+          <input type="text" class="user-change-name" placeholder="Nome">
+          <input type="email" class="user-change-email" placeholder="example@asa.com">
+          <input type="date" class="user-change-birthday">
+          <input class="user-change-cpf" placeholder="000.000.000-00" type="text">
+          <input type="tel" class="user-change-tel" placeholder="(00) 00000-0000">
+        </div>
+        <button type="submit">Alterar</button>
+      </form>
+    </div>
+  </div>
+  <script src="./js/main.js" defer type="module"></script>
+</body>
+
+</html>

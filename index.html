@@ -7,6 +7,7 @@
   <title>Selenita Cosmetics</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="./sc.svg" type="image/svg_xml">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
   <header>
     <div class="header containeru">
       <div class="logo">
-        <img src="./img/main/sc-logo.png">
+        <img src="./img/main/sc-logo.svg">
         <h1>Selenita Cosmetics</h1>
       </div>
       <input type="checkbox" id="menu" class="menu-nav__button">
@@ -35,12 +36,12 @@
         </ul>
       </label>
       <div class="menu-member">
-        <a href=""><img src="./img/main/user.svg"></a>
-        <a href=""><img src="./img/main/fav.svg"></a>
+        <a href="javascript:void(0)"><img id="login-btn" src="./img/main/user.svg"></a>
+        <a href="javascript:void(0)"><img id="fav-btn" src="./img/main/fav.svg"></a>
       </div>
     </div>
   </header>
-  <main>
+  <main class="main">
     <div class="container">
       <!-- Slider main container -->
       <div class="swiper">
@@ -409,8 +410,18 @@
       </dl>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="./js/script.js"></script>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Login</h2>
+      <form id="login-form">
+        <input id="email" type="email" placeholder="Email" required>
+        <input id="password" type="password" placeholder="Senha" required>
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  </div>
+  <script src="./js/main.js" defer type="module"></script>
 </body>
 
 </html>

@@ -26,6 +26,11 @@ footer {
   color: var(--color-main);
 }
 
+.footer a:hover {
+  color: var(--color-info-det);
+  transition: 0.1s ease-in-out;
+}
+
 .help,
 .departments,
 .my-account,

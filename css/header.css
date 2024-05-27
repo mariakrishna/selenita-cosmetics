@@ -18,7 +18,7 @@
 }
 
 header,
-main {
+.main {
   background-color: var(--color-bg);
 }
 
@@ -37,11 +37,15 @@ header {
 }
 
 .logo {
+  display: flex;
+  flex-direction: column;
   padding: 22px;
   font-size: 36px;
   line-height: 1;
   width: 160px;
+  gap: 10px;
   text-align: center;
+  justify-content: center;
 }
 
 .menu-nav {
@@ -51,6 +55,10 @@ header {
   flex-wrap: wrap;
   font-size: 28px;
   line-height: 1.5;
+}
+
+.menu-nav a {
+  color: var(--color-main);
 }
 
 .menu-member {
@@ -123,6 +131,8 @@ header {
   }
 
   .menu-nav {
+    font-size: 24px;
+    box-sizing: border-box;
     background-color: var(--color-bg);
     flex-direction: column;
     position: fixed;

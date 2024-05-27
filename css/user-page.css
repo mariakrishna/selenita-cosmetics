@@ -1,0 +1,173 @@
+.user-account {
+  display: grid;
+  grid-template-areas:
+    "user-salute user-salute user-salute user-salute"
+    "user-personal-data user-personal-data user-personal-data user-personal-data"
+    "user-address user-address user-address user-address"
+    "user-credit-card user-credit-card user-credit-card user-credit-card"
+    "accoun-btn accoun-btn accoun-btn accoun-btn";
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.user-salute {
+  grid-area: user-salute;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: var(--color-main);
+  margin-bottom: 40px;
+}
+
+.user-personal-data {
+  grid-area: user-personal-data;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
+  border: var(--color-gray) solid 1px;
+  padding: 24px;
+  margin-bottom: 32px;
+  gap: 20px;
+}
+
+.user-personal-data h3,
+.user-address h3,
+.user-credit-card h3 {
+  font-size: 20px;
+  color: var(--color-main);
+  line-height: 1.5;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.user-personal-data img {
+  width: 10%;
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  opacity: 70%;
+}
+
+.user-data-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 40px 0px 80px 0px;
+  align-self: center;
+}
+
+.user-name {
+  font-weight: 700;
+}
+
+.user-personal-data a {
+  color: var(--color-main);
+  align-self: self-start;
+  justify-self: self-end;
+}
+
+.user-address,
+.user-credit-card {
+  border: var(--color-gray) solid 1px;
+  padding: 24px;
+  margin-bottom: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.user-address {
+  grid-area: user-address;
+}
+
+.main-address,
+.main-credit-card {
+  grid-column: 1/2;
+  margin-bottom: 20px;
+}
+
+.main-address li,
+.main-credit-card li {
+  margin-bottom: 12px;
+}
+
+.main-adress-title {
+  font-weight: 700;
+}
+
+.add-new-adress {
+  display: flex;
+  justify-content: center;
+}
+
+.add-new-adress li > a,
+.add-new-card li > a {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.add-new-adress img,
+.add-new-card img {
+  opacity: 70%;
+}
+
+.user-personal-data a:hover,
+.add-new-adress li > a:hover,
+.add-new-card li > a:hover,
+.accoun-btn a:hover {
+  color: var(--color-info-det);
+  transition: 0.1s ease-in-out;
+}
+
+.user-credit-card {
+  grid-area: user-credit-card;
+}
+
+.user-address span,
+.user-credit-card span {
+  color: var(--color-gray);
+  opacity: 90%;
+}
+
+.accoun-btn {
+  grid-area: accoun-btn;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accoun-btn a {
+  color: var(--color-main);
+}
+
+@media (max-width: 520px) {
+  .user-personal-data {
+    grid-template-columns: 1fr;
+  }
+
+  .user-data-list {
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .user-personal-data img {
+    position: initial;
+    display: flex;
+    width: 30%;
+    justify-self: center;
+  }
+
+  .user-address,
+  .user-credit-card {
+    grid-template-columns: 1fr;
+  }
+  .add-new-adress p,
+  .add-new-card p {
+    margin-bottom: 20px;
+  }
+}

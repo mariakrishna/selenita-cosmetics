@@ -1,0 +1,26 @@
+.favoritos {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.fav-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: var(--color-main);
+  margin-bottom: 40px;
+}
+
+.favoritos-conainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 32px;
+  gap: 20px;
+}
+
+.favoritos-conainer a:hover {
+  color: var(--color-info-det);
+  transition: 0.1s ease-in-out;
+}
